@@ -32,7 +32,7 @@
             <a class="nav-link active" aria-current="page" href="#" style="color: white;  padding-left: 2rem;">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="blog" href="#" style="color: white; padding-left: 2rem;">Blog</a>
+            <a class="nav-link" type="button" id="blog" href="#" style="color: white; padding-left: 2rem;" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add</a>
           </li>
           </li>
         </ul>
@@ -45,9 +45,75 @@
     </div>
   </nav>
   <!-- header -->
-
+  <div class="heading">
+    <h1 class="fw-light text-center fst-italic">Person Management Application</h1>
+  </div>
   <div class="display">
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
+      <div class="row">
+        <div class="col -sm-1">
+          Id : 1
+        </div>
+        <div class="col -sm-4">
+          Name : Leanne Graham
+        </div>
+        <div class="col -sm-4">
+          UserName : Bret
+        </div>
+        <div class="col">
+          Email : sincere@april.biz
+        </div>
+      </div>
+      <div class="row">
+        <div class="col -sm-1">
+          <b>Address:</b>
+        </div>
+        <div class="col -sm-3">
+          Street : Kulas Light
+        </div>
+        <div class="col -sm-2">
+          Suite : Apt. 556
+        </div>
+        <div class="col -sm-1">
+          City : Gwenborough
+        </div>
+        <div class="col -sm-1">
+          Zipcode : 92998-3874
+        </div>
+        <div class="col -sm-1">
+          <b>Geo:</b>
+        </div>
+        <div class="col">
+          Latitude : -37.3159
+        </div>
+        <div class="col">
+          Longitude : 81.1496
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-4">
+          Phone : 1-770-736-8031
+        </div>
+        <div class="col col-sm-8">
+          Website : Hildergard.org
+        </div>
+      </div>
+      <div class="row">
+        <div class="col -sm-1">
+          <b>Company:</b>
+        </div>
+        <div class="col">
+          name : Romagard-crana
+        </div>
+        <div class="col">
+          CatchPhrase : Multi-layered
+        </div>
+        <div class="col">
+          bs : harness real time e markets
+        </div>
+      </div>
+    </div>
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -111,7 +177,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -175,7 +241,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -239,7 +305,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -303,7 +369,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -367,7 +433,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -431,7 +497,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -495,7 +561,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -559,7 +625,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -623,71 +689,7 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
-      <div class="row">
-        <div class="col -sm-1">
-          Id
-        </div>
-        <div class="col -sm-4">
-          Name
-        </div>
-        <div class="col -sm-4">
-          UserName
-        </div>
-        <div class="col">
-          Email
-        </div>
-      </div>
-      <div class="row">
-        <div class="col -sm-1">
-          <b>Address:</b>
-        </div>
-        <div class="col -sm-3">
-          Street
-        </div>
-        <div class="col -sm-2">
-          Suite
-        </div>
-        <div class="col -sm-1">
-          City
-        </div>
-        <div class="col -sm-1">
-          Zipcode
-        </div>
-        <div class="col -sm-1">
-          <b>Geo:</b>
-        </div>
-        <div class="col">
-          Latitude
-        </div>
-        <div class="col">
-          Longitude
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-sm-4">
-          Phone
-        </div>
-        <div class="col col-sm-8">
-          Website
-        </div>
-      </div>
-      <div class="row">
-        <div class="col -sm-1">
-          <b>Company:</b>
-        </div>
-        <div class="col">
-          name
-        </div>
-        <div class="col">
-          CatchPhrase
-        </div>
-        <div class="col">
-          bs
-        </div>
-      </div>
-    </div>
-    <div class="container text-center" style="border: 3px solid black;margin: 2em;">
+    <div class="container text-center" style="border: 3px solid black;margin-top: 2em; margin-bottom: 0.05em;">
       <div class="row">
         <div class="col -sm-1">
           Id
@@ -755,9 +757,9 @@
 
 
 
-   <!-- Button trigger modal -->
+  <!-- Button trigger modal -->
   <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
       <div class="modal-content">
         <div class="modal-header">
@@ -765,19 +767,19 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <div class="container text-center" style="border: 3px solid black;">
+          <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
             <div class="row">
               <div class="col -sm-1">
-                Id
+                Id : 1
               </div>
               <div class="col -sm-4">
-                Name
+                Name : Leanne Graham
               </div>
               <div class="col -sm-4">
-                UserName
+                UserName : Bret
               </div>
               <div class="col">
-                Email
+                Email : sincere@april.biz
               </div>
             </div>
             <div class="row">
@@ -785,33 +787,33 @@
                 <b>Address:</b>
               </div>
               <div class="col -sm-3">
-                Street
+                Street : Kulas Light
               </div>
               <div class="col -sm-2">
-                Suite
+                Suite : Apt. 556
               </div>
               <div class="col -sm-1">
-                City
+                City : Gwenborough
               </div>
               <div class="col -sm-1">
-                Zipcode
+                Zipcode : 92998-3874
               </div>
               <div class="col -sm-1">
                 <b>Geo:</b>
               </div>
               <div class="col">
-                Latitude
+                Latitude : -37.3159
               </div>
               <div class="col">
-                Longitude
+                Longitude : 81.1496
               </div>
             </div>
             <div class="row">
               <div class="col col-sm-4">
-                Phone
+                Phone : 1-770-736-8031
               </div>
               <div class="col col-sm-8">
-                Website
+                Website : Hildergard.org
               </div>
             </div>
             <div class="row">
@@ -819,13 +821,13 @@
                 <b>Company:</b>
               </div>
               <div class="col">
-                name
+                name : Romagard-crana
               </div>
               <div class="col">
-                CatchPhrase
+                CatchPhrase : Multi-layered
               </div>
               <div class="col">
-                bs
+                bs : harness real time e markets
               </div>
             </div>
           </div>
@@ -838,8 +840,84 @@
   </div>
   <div class="container">
     <div id="my-container" style="display: flex; flex-wrap: wrap;"></div>
-</div>
+  </div>
 
+  <!-- model for blog -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Add Info</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="row g-3">
+            <div class="col-md-2">
+              <label for="myid" class="form-label">ID</label>
+              <input type="number" class="form-control" id="myid" required>
+            </div>
+            <div class="col-md-5">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="col-md-5">
+              <label for="username" class="form-label">UserName</label>
+              <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="col-md-12">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+
+            <div class="col-6">
+              <label for="inputAddress" class="form-label">Address: Street</label>
+              <input type="text" class="form-control" id="inputAddress" required>
+            </div>
+            <div class="col-4">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" required>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip" required>
+            </div>
+            <div class="col-md-3">
+              <label for="lat" class="form-label">Latitude</label>
+              <input type="text" class="form-control" id="lat" required>
+            </div>
+            <div class="col-md-3">
+              <label for="lon" class="form-label">Longitude</label>
+              <input type="text" class="form-control" id="lon" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="number" class="form-control" id="phone" required>
+            </div>
+            <div class="col-md-12">
+              <label for="website" class="form-label">Website</label>
+              <input type="number" class="form-control" id="website" required>
+            </div>
+            <div class="col-md-5">
+              <label for="cname" class="form-label">Company Name</label>
+              <input type="text" class="form-control" id="cname" required>
+            </div>
+            <div class="col-md-7">
+              <label for="CatchPhrase" class="form-label">CatchPhrase</label>
+              <input type="text" class="form-control" id="CatchPhrase" required>
+            </div>
+            <div class="col-md-12">
+              <label for="bs" class="form-label">BS</label>
+              <input type="text" class="form-control" id="bs" required>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="reset" class="btn btn-secondary" data-bs-dismiss="modal">Clear</button>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- footer -->
   <footer class="bg-dark text-center text-white">
