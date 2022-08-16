@@ -1,16 +1,6 @@
-// const myModal = document.getElementById('myModal')
-// const myInput = document.getElementById('myInput')
-
-// myModal.addEventListener('shown.bs.modal', () => {
-//   myInput.focus()
-// })
-
-document.querySelector('#search').addEventListener('click', () => {
   const xhr = new XMLHttpRequest();
 
-  const searchValue = document.querySelector('#my-text').value
-
-  const url = `https://www.googleapis.com/youtube/v3/search?key=AIzaSyBL7tmoBcFl44584VA4eC7RrVu_izPyyLM&part=snippet&q=${searchValue}&maxResults=50`
+  const url = `https://jsonplaceholder.typicode.com/users?utm_source=Mailerlite&utm_medium=E-mail&utm_campaign=Test%20Series&utm_term=2022-08-16`
 
   xhr.open('GET', url)
 
@@ -20,14 +10,24 @@ document.querySelector('#search').addEventListener('click', () => {
           console.log(response)
 
           let template = ''
-          for(let i=0; i < response.items.length; i++) {
+          for(let i=0; i < 10; i++) {
               template += `
-                  <div class="video-items" style="width: 20%; margin: 1.2em;">
-                      <a href="https://www.youtube.com/watch?v=${response.items[i].id.videoId}" target="_blank">
-                          <img style="width: 100%" src="${response.items[i].snippet.thumbnails.high.url}" />
-                      </a>
-                      <h5>${response.items[i].snippet.title}</h5>
-                      <p style="color: gray">${response.items[i].snippet.description}</p>
+                  <div class="info-box" style="width: 100%; margin: 1.2em;">
+                  <h5>${response[i].id}</h5>
+                      <p style="color: gray">Name : ${response[i].name}</p>
+                      <p style="color: gray">UserName :${response[i].username}</p><p style="color: gray">${response[i].email}</p><p style="color: gray">Address - street :${response[i].address.street}</p>
+                      <p style="color: gray">Suite :${response[i].address.suite}</p>
+                      <p style="color: gray">City :${response[i].address.city}</p>
+                      <p style="color: gray">Zipcode :${response[i].address.zipcode}</p>
+                      <p style="color: gray">Geo - Latitude :${response[i].address.geo.lat}</p>
+                      <p style="color: gray">Geo - Longitude :${response[i].address.geo.lng}</p>
+                      <p style="color: gray">Phone :${response[i].phone}</p>
+                      <p style="color: gray">Website :${response[i].website}</p>
+                      <p style="color: gray">Company-Name :${response[i].company.name}</p>
+                      <p style="color: gray">Company-CatchPhrase :${response[i].company.catchPhrase}</p>
+                      <p style="color: gray">Company-Bs : ${response[i].company.bs}</p>
+
+                      
                   </div>
               `
           }
@@ -37,4 +37,3 @@ document.querySelector('#search').addEventListener('click', () => {
   }
 
   xhr.send()
-})
