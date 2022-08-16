@@ -12,23 +12,70 @@
           let template = ''
           for(let i=0; i < 10; i++) {
               template += `
-                  <div class="info-box" style="width: 100%; margin: 1.2em;">
-                  <h5>${response[i].id}</h5>
-                      <p style="color: gray">Name : ${response[i].name}</p>
-                      <p style="color: gray">UserName :${response[i].username}</p><p style="color: gray">${response[i].email}</p><p style="color: gray">Address - street :${response[i].address.street}</p>
-                      <p style="color: gray">Suite :${response[i].address.suite}</p>
-                      <p style="color: gray">City :${response[i].address.city}</p>
-                      <p style="color: gray">Zipcode :${response[i].address.zipcode}</p>
-                      <p style="color: gray">Geo - Latitude :${response[i].address.geo.lat}</p>
-                      <p style="color: gray">Geo - Longitude :${response[i].address.geo.lng}</p>
-                      <p style="color: gray">Phone :${response[i].phone}</p>
-                      <p style="color: gray">Website :${response[i].website}</p>
-                      <p style="color: gray">Company-Name :${response[i].company.name}</p>
-                      <p style="color: gray">Company-CatchPhrase :${response[i].company.catchPhrase}</p>
-                      <p style="color: gray">Company-Bs : ${response[i].company.bs}</p>
-
-                      
-                  </div>
+              <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
+              <div class="row">
+                <div class="col -sm-1">
+                  Id : ${response[i].id}
+                </div>
+                <div class="col -sm-4">
+                  Name : ${response[i].name}
+                </div>
+                <div class="col -sm-4">
+                  UserName : ${response[i].username}
+                </div>
+                <div class="col">
+                  Email : ${response[i].email}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col -sm-1">
+                  <b>Address:</b>
+                </div>
+                <div class="col -sm-3">
+                  Street : ${response[i].address.street}
+                </div>
+                <div class="col -sm-2">
+                  Suite : ${response[i].address.suite}
+                </div>
+                <div class="col -sm-1">
+                  City : ${response[i].address.city}
+                </div>
+                <div class="col -sm-1">
+                  Zipcode : ${response[i].address.zipcode}
+                </div>
+                <div class="col -sm-1">
+                  <b>Geo:</b>
+                </div>
+                <div class="col">
+                  Latitude : ${response[i].address.geo.lat}
+                </div>
+                <div class="col">
+                  Longitude : ${response[i].address.geo.lng}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col col-sm-4">
+                  Phone : ${response[i].phone}
+                </div>
+                <div class="col col-sm-8">
+                  Website : ${response[i].website}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col -sm-1">
+                  <b>Company:</b>
+                </div>
+                <div class="col">
+                  name : ${response[i].company.name}
+                </div>
+                <div class="col">
+                  CatchPhrase : ${response[i].company.catchPhrase}
+                </div>
+                <div class="col">
+                  bs : ${response[i].company.bs}
+                </div>
+              </div>
+            </div>
               `
           }
 
