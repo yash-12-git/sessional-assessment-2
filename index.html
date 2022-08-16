@@ -38,7 +38,7 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" id="itemId" placeholder="Enter Id" aria-label="Search">
-          <button type="button" class="btn btn-outline-light" type="submit" data-bs-toggle="modal"
+          <button type="button" id="search" class="btn btn-outline-light" type="submit" data-bs-toggle="modal"
             data-bs-target="#exampleModal">Search</button>
         </form>
       </div>
@@ -625,70 +625,6 @@
         </div>
       </div>
     </div>
-    <div class="container text-center" style="border: 3px solid black;margin-top: 2em;">
-      <div class="row">
-        <div class="col -sm-1">
-          Id
-        </div>
-        <div class="col -sm-4">
-          Name
-        </div>
-        <div class="col -sm-4">
-          UserName
-        </div>
-        <div class="col">
-          Email
-        </div>
-      </div>
-      <div class="row">
-        <div class="col -sm-1">
-          <b>Address:</b>
-        </div>
-        <div class="col -sm-3">
-          Street
-        </div>
-        <div class="col -sm-2">
-          Suite
-        </div>
-        <div class="col -sm-1">
-          City
-        </div>
-        <div class="col -sm-1">
-          Zipcode
-        </div>
-        <div class="col -sm-1">
-          <b>Geo:</b>
-        </div>
-        <div class="col">
-          Latitude
-        </div>
-        <div class="col">
-          Longitude
-        </div>
-      </div>
-      <div class="row">
-        <div class="col col-sm-4">
-          Phone
-        </div>
-        <div class="col col-sm-8">
-          Website
-        </div>
-      </div>
-      <div class="row">
-        <div class="col -sm-1">
-          <b>Company:</b>
-        </div>
-        <div class="col">
-          name
-        </div>
-        <div class="col">
-          CatchPhrase
-        </div>
-        <div class="col">
-          bs
-        </div>
-      </div>
-    </div>
     <div class="container text-center" style="border: 3px solid black;margin-top: 2em; margin-bottom: 0.05em;">
       <div class="row">
         <div class="col -sm-1">
@@ -755,7 +691,7 @@
     </div>
   </div>
 
-
+  <div id="my-container" style="display: flex; flex-wrap: wrap;"></div>
 
   <!-- Button trigger modal -->
   <!-- Modal -->
